@@ -1,0 +1,8 @@
+{% set nano = salt['grains.filter_by']({
+    'Debian': {
+        'pkg': 'nano',
+    },
+    'RedHat': {
+        'pkg': 'nano',
+    },
+}, merge=salt['pillar.get']('nano:lookup')) %}
