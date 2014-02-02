@@ -1,2 +1,6 @@
+{% from "nano/map.jinja" import nano with context %}
+
 nano:
-  pkg.purged
+  pkg:
+    - purged
+    - name: {{ nano.pkg }}
