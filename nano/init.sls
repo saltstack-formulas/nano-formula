@@ -1,6 +1,5 @@
 {% from "nano/map.jinja" import nano with context %}
 
 nano:
-  pkg:
-    - installed
+  pkg.installed:
     - name: {{ nano.pkg }}
